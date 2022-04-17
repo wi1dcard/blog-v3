@@ -25,6 +25,9 @@ outputs:
     - RSS
     - JSON
 
+taxonomies:
+  tag: tags
+
 params:
   env: production
   description: I'm Wi1dcard, a wild card.
