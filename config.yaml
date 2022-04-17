@@ -1,0 +1,92 @@
+baseURL: https://wi1dcard.dev/
+languageCode: en-US
+title: Wi1dcard
+theme: papermod
+
+summaryLength: 20
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+menu:
+  main:
+    - name: GitHub
+      url: https://github.com/wi1dcard
+      weight: 1
+    - name: Tags
+      url: tags/
+      weight: 2
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+params:
+  env: production
+  description: I'm Wi1dcard, a wild card.
+  author: Wi1dcard
+  keywords: [wi1dcard, kubernetes, prometheus]
+
+  defaultTheme: auto
+  # disableThemeToggle: true
+  ShowShareButtons: false
+  ShowReadingTime: false
+  # disableSpecial1stPost: true
+  displayFullLangName: false
+  ShowPostNavLinks: false
+  ShowBreadCrumbs: false
+  ShowCodeCopyButtons: true
+  ShowToc: true
+  # comments: false
+  images: []
+
+  homeInfoParams:
+    Title: "Hello"
+    Content: >
+      I'm Wildcard, a DevOps engineer, in love with Golang, mainly working on Prometheus and Kubernetes.
+
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/wi1dcard"
+    - name: gitlab
+      url: "https://gitlab.com/wi1dcard"
+
+  editPost:
+    URL: "https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite/content"
+    Text: "Suggest Changes" # edit text
+    appendFilePath: true # to append file path to Edit link
+
+  # label:
+  #     text: "Home"
+  #     icon: icon.png
+  #     iconHeight: 35
+
+  # analytics:
+  #     google:
+  #         SiteVerificationTag: "XYZabc"
+
+  # assets:
+  #     favicon: "<link / abs url>"
+  #     favicon16x16: "<link / abs url>"
+  #     favicon32x32: "<link / abs url>"
+  #     apple_touch_icon: "<link / abs url>"
+  #     safari_pinned_tab: "<link / abs url>"
+
+  # cover:
+  #     hidden: true # hide everywhere but not in structured data
+  #     hiddenInList: true # hide on list pages and home
+  #     hiddenInSingle: true # hide on single page
+
+  # fuseOpts:
+  #     isCaseSensitive: false
+  #     shouldSort: true
+  #     location: 0
+  #     distance: 1000
+  #     threshold: 0.4
+  #     minMatchCharLength: 0
+  #     keys: ["title", "permalink", "summary", "content"]
