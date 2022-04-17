@@ -1,0 +1,31 @@
+[build]
+  publish = "public/"
+  command = "hugo"
+
+[build.processing]
+  skip_processing = false
+[build.processing.css]
+  bundle = true
+  minify = false
+[build.processing.js]
+  bundle = true
+  minify = false
+[build.processing.html]
+  pretty_urls = true
+[build.processing.images]
+  compress = true
+
+[[redirects]]
+  from = "/resume"
+  to = "https://wi1dcard.notion.site/wi1dcard/Weizhe-Way-Sun-1d099ae51a064eddafe571117f5aceee"
+  status = 302
+  force = true
+
+[[headers]]
+  for = "/*"
+
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Strict-Transport-Security = "max-age=15552000; includeSubdomains"
