@@ -1,6 +1,9 @@
 [build]
   publish = "public/"
-  command = "hugo"
+  command = "hugo --gc --minify"
+
+[context.deploy-preview]
+  command = "hugo --gc --minify --buildFuture --buildDrafts -b $DEPLOY_PRIME_URL"
 
 [build.processing]
   skip_processing = false
