@@ -5,19 +5,6 @@
 [context.deploy-preview]
   command = "hugo --gc --minify --buildFuture --buildDrafts -b $DEPLOY_PRIME_URL"
 
-[build.processing]
-  skip_processing = false
-[build.processing.css]
-  bundle = true
-  minify = false
-[build.processing.js]
-  bundle = true
-  minify = false
-[build.processing.html]
-  pretty_urls = true
-[build.processing.images]
-  compress = true
-
 [[redirects]]
   from = "/resume"
   to = "https://wi1dcard.notion.site/wi1dcard/Weizhe-Way-Sun-1d099ae51a064eddafe571117f5aceee"
