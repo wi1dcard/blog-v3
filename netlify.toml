@@ -29,11 +29,11 @@
     Cache-Control = "public, max-age=604800"
 
 [[headers]]
-  for = "/assets"
+  for = "/assets/*"
   [headers.values]
     Cache-Control = "public, max-age=604800"
 
 [[headers]]
-  for = "/images"
+  for = "/images/*"
   [headers.values]
     Cache-Control = "public, max-age=604800"
