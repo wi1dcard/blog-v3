@@ -4,9 +4,7 @@ DIR=$(dirname $0)
 TMPFILE=$(mktemp)
 
 pngpaste "$TMPFILE"
-
 HASH=$(md5 < "$TMPFILE")
-IMG="/resources/$HASH.png"
 
-mv $TMPFILE "$DIR$IMG"
+mv $TMPFILE "$DIR/static/images/$HASH.png"
 echo "![]($IMG)" | tee >(pbcopy)
